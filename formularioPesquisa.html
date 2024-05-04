@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="autor" content="Katia">
+    <meta name="assunto" content="Galeria de fotos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa sobre Rock</title>
+    <link rel ="icon" href="img_site/icons8-música-rock-48.png">
+</head>
+<body>
+    <header>
+        <h1>Página 2 - Formulário 🤟</h1>
+        <nav aria-label="navegação primária">
+            <ul>
+                <li><a href="../Site_Completo/index.html">Home</a></li>
+
+                <li><a href="../Site_Completo/fotos.html">Fotos da história do Rock</a></li>
+
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h2>Formulário</h2>
+        <p>Responda nossa pesquisa</p>
+
+        <!--precisamos ter um local para enviar os dados-->
+        <form action="/action_page.php" method="POST">
+            
+            <fieldset>
+                <legend>Informações Gerais</legend>
+	
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Informe seu nome" autofocus><br><br>
+            
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Informe seu e-mail"><br><br>
+                
+                <label for="dataanivers">Idade:</label>
+                <input type="date">
+                
+                <label for="idade">Idade:</label>
+                <input type="number" name="idade" id="idade" placeholder="Informe sua idade"><br><br>
+              
+            </fieldset><br><br>
+
+            <fieldset>
+                <legend>Informações sobre a Banda Favorita</legend>
+
+                    <p><label for="banda-favorita">Qual é a sua banda de rock favorita?</label></p>
+                    <p><input type="text" name="banda-favorita" id="banda-favorita" placeholder="Capital Inicial"></p>
+            
+                    <p>Qual é o seu gênero de rock favorito?</p>
+                    <p><select name="genero-favorito" id="genero-favorito" >
+                        <option value="rock-and-roll">Rock and Roll</option>
+                        <option value="alternative">Alternativo</option>
+                        <option value="classic">Clássico</option>
+                        <option value="punk">Punk</option>
+                        <option value="metal">Metal</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </p>
+
+                    <p>Qual é a sua plataforma de streaming de música favorita?</p>
+                        <input type="radio" name="plataformaStreaming" id="spotify" value="spotify">
+                        <label for="spotify">Spotify</label>
+                      
+                        <input type="radio" name="plataformaStreaming" id="deezer"  value="deezer">
+                        <label for="deezer">Deezer</label>
+                      
+                        <input type="radio" name="plataformaStreaming" id="applemusic"  value="applemusic">
+                        <label for="applemusic">Apple Music</label>
+
+                    <p>Quais dessas bandas de rock nacional conhece?</p>
+
+                        <input type="checkbox" id="legiao-urbana" name="bandas" value="legiao-urbana">
+                        <label for="legiao-urbana">Legião Urbana</label><br>
+
+                        <input type="checkbox" id="titas" name="bandas" value="titas">
+                        <label for="titas">Titãs</label><br>
+
+                        <input type="checkbox" id="paralamas-do-sucesso" name="bandas" value="paralamas-do-sucesso">
+                        <label for="paralamas-do-sucesso">Os Paralamas do Sucesso</label><br>
+
+                        <input type="checkbox" id="capital-inicial" name="bandas" value="capital-inicial">
+                        <label for="capital-inicial">Capital Inicial</label><br>
+
+                        <input type="checkbox" id="charlie-brown-jr" name="bandas" value="charlie-brown-jr">
+                        <label for="charlie-brown-jr">Charlie Brown Jr.</label><br>
+
+            </fieldset><br><br>
+        
+            <fieldset> 
+                <legend>Participe da nossa Galeria de Fotos</legend>
+                <p>Anexe uma foto sua em um Show para adicionarmos na galeria!</p>
+                <input type="file" name="anexoFoto" id="anexoFoto">
+
+                <p><label for="mensagem">Legenda da Foto</label></p>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Escreva a legenda de sua foto aqui"></textarea>
+            </fieldset>
+            <br>
+
+            <button type="submit" onclick="alert('Enviado')">Enviar</button>
+            <button type="reset">Limpar</button>
+
+
+
+        </form>
+      <p> <a href="../Site_Completo/formularioPesquisa.html">Voltar ao topo</a></p>
+    </main>
+    <footer>
+        <p> 
+            &lt; &copy; Copyright App - Rock Nacional &gt;
+            </p>
+    </footer>
+</body>
+</html>
+    
